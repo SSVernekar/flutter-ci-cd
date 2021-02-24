@@ -21,7 +21,7 @@ jobs:
       - run: flutter test
 
 
-   runs-on: macos-latest
+    runs-on: macos-latest
     #sequence of tasks called
     steps:
       # The branch or tag ref that triggered the workflow will be checked out.
@@ -43,7 +43,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          token: 67b7fd76-d407-477d-8260-072e7a7e6cf5
           file: coverage/lcov.info   
 
   # build_ios:
